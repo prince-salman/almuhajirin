@@ -22,7 +22,7 @@ export default function AnnouncementBanner() {
   return (
     <div className="bg-green-700 text-white text-sm py-2 px-4 flex items-center justify-center gap-3 relative">
       <span className="text-center">
-        PPDB 2025/2026 Sudah Dibuka! Daftar Sekarang Sebelum Kuota Penuh.
+        PPDB 2026/2027 Sudah Dibuka! Daftar Sekarang Sebelum Kuota Penuh.
       </span>
       <Link
         href="/register"

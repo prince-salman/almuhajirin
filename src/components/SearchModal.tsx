@@ -76,7 +76,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
             <div className="p-6 bg-slate-50 dark:bg-slate-900/50">
               <p className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-3">Pencarian Populer</p>
               <div className="flex flex-wrap gap-2">
-                {["PPDB 2025", "Beasiswa", "Jadwal Ujian", "Prestasi", "Biaya Pendidikan"].map((term) => (
+                {["PPDB 2026", "Beasiswa", "Jadwal Ujian", "Prestasi", "Biaya Pendidikan"].map((term) => (
                   <button
                     key={term}
                     type="button"

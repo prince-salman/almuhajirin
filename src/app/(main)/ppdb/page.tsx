@@ -8,7 +8,7 @@ import { QRCodeSVG } from "qrcode.react";
 import ShareButtons from "@/components/ShareButtons";
 
 function Countdown() {
-  const target = new Date("2025-08-31T23:59:59");
+  const target = new Date("2026-08-31T23:59:59");
   const [timeLeft, setTimeLeft] = useState({ d: 0, h: 0, m: 0, s: 0 });
 
   useEffect(() => {
@@ -68,7 +68,7 @@ export default function PPDBPage() {
         
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="relative z-10">
           <span className="text-green-300 text-sm font-semibold uppercase tracking-widest">Penerimaan Siswa Baru</span>
-          <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6">PPDB 2025/2026</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6">PPDB 2026/2027</h1>
           
           <div className="flex justify-center mb-8">
             <div className="bg-white p-3 rounded-2xl shadow-xl">
@@ -79,12 +79,12 @@ export default function PPDBPage() {
           <p className="text-green-100 mt-4 max-w-xl mx-auto text-lg">Pendaftaran Gelombang 2 sedang berlangsung. Segera daftarkan putra-putri Anda!</p>
           <div className="flex items-center justify-center gap-2 mt-4 text-green-300 mb-8">
             <Clock size={16} />
-            <span className="text-sm">Penutupan Gelombang 2: 31 Agustus 2025</span>
+            <span className="text-sm">Penutupan Gelombang 2: 31 Agustus 2026</span>
           </div>
           <Countdown />
           
           <div className="flex justify-center mt-12 bg-black/20 backdrop-blur-sm w-fit mx-auto px-6 py-3 rounded-full">
-            <ShareButtons title="Info PPDB Al-Muhajirin 2025/2026" />
+            <ShareButtons title="Info PPDB Al-Muhajirin 2026/2027" />
           </div>
         </motion.div>
       </section>
@@ -141,17 +141,17 @@ export default function PPDBPage() {
               <tbody className="divide-y divide-slate-100">
                 <tr className="text-slate-500">
                   <td className="px-6 py-4 font-medium">Gelombang 1</td>
-                  <td className="px-6 py-4">1 Maret - 31 Mei 2025</td>
+                  <td className="px-6 py-4">1 Maret - 31 Mei 2026</td>
                   <td className="px-6 py-4"><span className="bg-slate-100 text-slate-500 px-3 py-1 rounded-full text-sm font-medium">Sudah Tutup</span></td>
                 </tr>
                 <tr className="bg-green-50">
                   <td className="px-6 py-4 font-bold text-green-700">Gelombang 2</td>
-                  <td className="px-6 py-4 font-medium">1 Juni - 31 Agustus 2025</td>
+                  <td className="px-6 py-4 font-medium">1 Juni - 31 Agustus 2026</td>
                   <td className="px-6 py-4"><span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">Sedang Berjalan</span></td>
                 </tr>
                 <tr>
                   <td className="px-6 py-4 font-medium text-slate-500">Gelombang 3</td>
-                  <td className="px-6 py-4 text-slate-400">1 - 30 September 2025</td>
+                  <td className="px-6 py-4 text-slate-400">1 - 30 September 2026</td>
                   <td className="px-6 py-4"><span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-medium">Akan Datang</span></td>
                 </tr>
               </tbody>

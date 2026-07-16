@@ -60,7 +60,7 @@ export default async function AdminSettingsPage() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Batas Akhir (Gelombang Saat Ini)</label>
-                  <input type="date" className="w-full px-4 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-slate-50 dark:bg-slate-800" defaultValue={settings?.ppdb_wave2_close || "2025-08-31"} />
+                  <input type="date" className="w-full px-4 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-slate-50 dark:bg-slate-800" defaultValue={settings?.ppdb_wave2_close || "2026-08-31"} />
                 </div>
               </div>
             </div>
