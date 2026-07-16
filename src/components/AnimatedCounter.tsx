@@ -37,10 +37,10 @@ export default function AnimatedCounter({ end, label, suffix = "", duration = 20
 
   return (
     <div ref={ref} className="text-center">
-      <div className="text-4xl md:text-5xl font-bold text-green-700">
+      <div className="text-4xl md:text-5xl font-bold text-white">
         {count.toLocaleString("id-ID")}{suffix}
       </div>
-      <div className="text-slate-600 mt-2 font-medium">{label}</div>
+      <div className="text-green-100 mt-2 font-medium">{label}</div>
     </div>
   );
 }
