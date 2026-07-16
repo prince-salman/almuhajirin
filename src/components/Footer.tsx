@@ -66,11 +66,11 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex gap-3">
                 <MapPin size={16} className="text-green-500 flex-shrink-0 mt-0.5" />
-                <span>Jl. Teluk Gong Raya No. 1, Penjaringan, Jakarta Utara 14450</span>
+                <span>Jl. B6 Tlk. Gong No.01, RT.7/RW.13, Pejagalan, Kecamatan Penjaringan, Jkt Utara, Daerah Khusus Ibukota Jakarta 14450</span>
               </li>
               <li className="flex gap-3">
                 <Phone size={16} className="text-green-500 flex-shrink-0" />
-                <span>(021) 6619-XXX</span>
+                <span>088219618682</span>
               </li>
               <li className="flex gap-3">
                 <Mail size={16} className="text-green-500 flex-shrink-0" />
@@ -90,10 +90,10 @@ export default function Footer() {
 
       {/* Sticky Bottom Contact Bar (Mobile only) */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 bg-green-700 text-white z-40 flex shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
-        <a href="tel:0216619000" className="flex-1 py-3 flex items-center justify-center gap-2 border-r border-green-600 font-medium text-sm">
+        <a href="tel:088219618682" className="flex-1 py-3 flex items-center justify-center gap-2 border-r border-green-600 font-medium text-sm">
           <Phone size={16} /> Telepon
         </a>
-        <a href="https://wa.me/6281234567890" className="flex-1 py-3 flex items-center justify-center gap-2 font-medium text-sm">
+        <a href="https://wa.me/6288219618682" className="flex-1 py-3 flex items-center justify-center gap-2 font-medium text-sm">
           <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> WhatsApp
         </a>
       </div>
