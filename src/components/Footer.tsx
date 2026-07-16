@@ -84,8 +84,11 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-slate-800 py-6 mb-16 md:mb-0 text-center text-sm text-slate-500">
-        <p>&copy; {new Date().getFullYear()} Yayasan Al-Muhajirin. Seluruh hak cipta dilindungi.</p>
+      <div className="border-t border-slate-800 py-6 mb-16 md:mb-0 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-slate-500">
+        <p>&copy; {new Date().getFullYear()} Yayasan Al-Muhajirin. Hak cipta dilindungi.</p>
+        <p>
+          Dikembangkan oleh <a href="https://portofolio-salman.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-400 transition-colors font-medium">Muhamad Salman</a>
+        </p>
       </div>
 
       {/* Sticky Bottom Contact Bar (Mobile only) */}
