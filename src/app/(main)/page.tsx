@@ -75,9 +75,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {[
-              { title: "MA Al-Muhajirin", link: "/ma", desc: "Madrasah Aliyah berfokus pada keunggulan akademik dan pendalaman ilmu agama setingkat SMA.", color: "from-green-600 to-green-800", icon: <BookOpen size={48} className="text-white" /> },
-              { title: "MTs Al-Muhajirin", link: "/mts", desc: "Madrasah Tsanawiyah yang mengintegrasikan kurikulum nasional dan pesantren setingkat SMP.", color: "from-green-700 to-green-900", icon: <Users size={48} className="text-white" /> },
-              { title: "Pondok Pesantren", link: "/ponpes", desc: "Pusat kaderisasi ulama dan pemimpin dengan sistem asrama penuh dan kurikulum salaf-khalaf.", color: "from-green-800 to-green-950", icon: <Award size={48} className="text-white" /> },
+              { title: "MA Al-Muhajirin", link: "/ma", desc: "Madrasah Aliyah berfokus pada keunggulan akademik dan pendalaman ilmu agama setingkat SMA.", image: "/logoma.png" },
+              { title: "MTs Al-Muhajirin", link: "/mts", desc: "Madrasah Tsanawiyah yang mengintegrasikan kurikulum nasional dan pesantren setingkat SMP.", image: "/logomts.png" },
+              { title: "Pondok Pesantren", link: "/ponpes", desc: "Pusat kaderisasi ulama dan pemimpin dengan sistem asrama penuh dan kurikulum salaf-khalaf.", image: "/logoponpes.png" },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -90,8 +90,8 @@ export default function Home() {
                   href={item.link}
                   className="group flex flex-col items-center bg-slate-50 rounded-3xl p-8 hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 h-full"
                 >
-                  <div className={`w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 group-hover:scale-105 transition-transform duration-300 bg-gradient-to-br ${item.color} flex items-center justify-center`}>
-                    {item.icon}
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6 group-hover:scale-105 transition-transform duration-300 bg-white flex items-center justify-center p-2">
+                    <img src={item.image} alt={item.title} className="w-full h-full object-contain" />
                   </div>
                   <h3 className="text-2xl font-bold text-slate-800 mb-3 text-center">{item.title}</h3>
                   <p className="text-slate-600 text-center flex-1">{item.desc}</p>
