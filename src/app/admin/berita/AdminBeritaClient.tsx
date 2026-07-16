@@ -6,7 +6,7 @@ import ImageUploader from "@/components/ImageUploader";
 import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/navigation";
 
-export default function AdminBeritaClient({ initialNews, author }: { initialNews: any[], author: string }) {
+export default function AdminBeritaClient({ initialNews, author, role }: { initialNews: any[], author: string, role: string }) {
   const [news, setNews] = useState(initialNews);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -19,6 +19,7 @@ export default function AdminBeritaClient({ initialNews, author }: { initialNews
     status: "terbit",
     thumbnail_url: "",
     content: "",
+    institution: role === "superadmin" ? "yayasan" : role.replace("admin_", "")
   });
 
   const handleOpenModal = (item?: any) => {
@@ -30,6 +31,7 @@ export default function AdminBeritaClient({ initialNews, author }: { initialNews
         status: item.status,
         thumbnail_url: item.thumbnail_url || "",
         content: item.content || "",
+        institution: item.institution || "yayasan",
       });
     } else {
       setFormData({
@@ -39,6 +41,7 @@ export default function AdminBeritaClient({ initialNews, author }: { initialNews
         status: "terbit",
         thumbnail_url: "",
         content: "",
+        institution: role === "superadmin" ? "yayasan" : role.replace("admin_", "")
       });
     }
     setIsModalOpen(true);
@@ -67,7 +70,7 @@ export default function AdminBeritaClient({ initialNews, author }: { initialNews
       thumbnail_url: formData.thumbnail_url,
       content: formData.content,
       author: author,
-      institution: 'yayasan',
+      institution: formData.institution,
       excerpt: formData.content.substring(0, 100) + '...',
       published_at: formData.status === 'terbit' ? new Date().toISOString() : null,
       slug: formData.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '')
@@ -232,6 +235,22 @@ export default function AdminBeritaClient({ initialNews, author }: { initialNews
                     </select>
                   </div>
                 </div>
+                
+                {role === "superadmin" && (
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Lembaga</label>
+                    <select
+                      value={formData.institution}
+                      onChange={(e) => setFormData({...formData, institution: e.target.value})}
+                      className="w-full px-4 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-slate-50 dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-green-500"
+                    >
+                      <option value="yayasan">Yayasan (Pusat)</option>
+                      <option value="ma">Madrasah Aliyah</option>
+                      <option value="mts">Madrasah Tsanawiyah</option>
+                      <option value="ponpes">Pondok Pesantren</option>
+                    </select>
+                  </div>
+                )}
 
                 <div>
                   <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Konten</label>
