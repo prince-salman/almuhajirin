@@ -184,14 +184,26 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="lg:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xl">
+        <div className="lg:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xl overflow-y-auto max-h-[80vh]">
           <div className="px-4 pt-3 pb-5 space-y-1">
             <Link href="/" className="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-green-600 dark:hover:text-green-400 hover:bg-slate-50 dark:hover:bg-slate-800" onClick={() => setIsOpen(false)}>Beranda</Link>
-            <div className="px-3 py-1.5 text-xs font-bold text-slate-400 uppercase tracking-widest">Lembaga</div>
+            
+            <div className="px-3 py-1.5 mt-2 text-xs font-bold text-slate-400 uppercase tracking-widest">Lembaga</div>
             {lembagaLinks.map((l) => (
               <Link key={l.href} href={l.href} className="block px-3 py-2.5 pl-6 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-green-600 dark:hover:text-green-400 hover:bg-slate-50 dark:hover:bg-slate-800" onClick={() => setIsOpen(false)}>{l.name}</Link>
             ))}
-            <div className="pt-2">
+
+            <div className="px-3 py-1.5 mt-2 text-xs font-bold text-slate-400 uppercase tracking-widest">Informasi</div>
+            {infoLinks.map((l) => (
+              <Link key={l.href} href={l.href} className="block px-3 py-2.5 pl-6 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-green-600 dark:hover:text-green-400 hover:bg-slate-50 dark:hover:bg-slate-800" onClick={() => setIsOpen(false)}>{l.name}</Link>
+            ))}
+
+            <div className="px-3 py-1.5 mt-2 text-xs font-bold text-slate-400 uppercase tracking-widest">Akademik & Layanan</div>
+            {layananLinks.map((l) => (
+              <Link key={l.href} href={l.href} className="block px-3 py-2.5 pl-6 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-green-600 dark:hover:text-green-400 hover:bg-slate-50 dark:hover:bg-slate-800" onClick={() => setIsOpen(false)}>{l.name}</Link>
+            ))}
+
+            <div className="pt-4 mt-4 border-t border-slate-100 dark:border-slate-800">
               <Link href="/ppdb" className="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-green-600 dark:hover:text-green-400 hover:bg-slate-50 dark:hover:bg-slate-800" onClick={() => setIsOpen(false)}>PPDB</Link>
               <Link href="/register" className="block mt-2 px-4 py-3 bg-green-700 text-white text-sm font-bold rounded-xl text-center hover:bg-green-800 transition-colors" onClick={() => setIsOpen(false)}>Daftar Sekarang</Link>
             </div>
