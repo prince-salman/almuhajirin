@@ -64,7 +64,7 @@ export default function PonpesPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold text-slate-800 mb-2">Sambutan Pengasuh Pondok</h2>
-              <div className="text-green-700 font-semibold mb-6">KH. Muhammad Fathurrahman, Lc., M.A.</div>
+              <div className="text-green-700 font-semibold mb-6">KH. Mohamad Saifur Rohman, S.Pd.I.</div>
               <p className="text-slate-600 leading-relaxed italic relative">
                 <span className="text-4xl text-green-300 absolute -top-4 -left-4">"</span>
                 Ahlan wa Sahlan. Pesantren adalah benteng terakhir pertahanan akidah dan akhlak umat. Kami berikhtiar mendidik para santri tidak hanya pandai mengaji, tetapi juga memiliki adab yang tinggi dan wawasan yang luas. Mari kita cetak generasi Robbani yang tangguh di era akhir zaman ini.
@@ -88,7 +88,7 @@ export default function PonpesPage() {
               </p>
               <div className="space-y-3">
                 {[
-                  { label: "Pengasuh", value: "KH. Muhammad Fathurrahman, Lc., M.A." },
+                  { label: "Pengasuh", value: "KH. Mohamad Saifur Rohman, S.Pd.I." },
                   { label: "Sistem", value: "Full Boarding (Asrama Penuh)" },
                   { label: "Kurikulum", value: "Salaf & Khalaf Terpadu" },
                   { label: "Jenjang Santri", value: "Ula, Wustha, Ulya (Setara SD-SMA)" },
@@ -244,7 +244,7 @@ export default function PonpesPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { jabatan: "Pengasuh / Mudir Ma'had", nama: "KH. Muhammad Fathurrahman, Lc., M.A.", asal: "Alumni Universitas Al-Azhar, Mesir" },
+              { jabatan: "Pengasuh / Mudir Ma'had", nama: "KH. Mohamad Saifur Rohman, S.Pd.I.", asal: "Alumni Universitas Al-Azhar, Mesir" },
               { jabatan: "Wakil Pengasuh Putra", nama: "Ust. H. Zainul Abidin, S.Pd.I.", asal: "Alumni Pesantren Lirboyo, Kediri" },
               { jabatan: "Wakil Pengasuh Putri", nama: "Nyai. Hj. Fatimah Azzahra, M.A.", asal: "Alumni Pesantren Al-Anwar, Rembang" },
             ].map((s, i) => (

@@ -64,7 +64,7 @@ export default function MTsPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold text-slate-800 mb-2">Sambutan Kepala Madrasah</h2>
-              <div className="text-green-600 font-semibold mb-6">H. Muhamad Ridwan, S.Ag., M.Pd.</div>
+              <div className="text-green-600 font-semibold mb-6">Hisnuddin, SH.I., S.Pd.I.</div>
               <p className="text-slate-600 leading-relaxed italic relative">
                 <span className="text-4xl text-green-300 absolute -top-4 -left-4">"</span>
                 Assalamu'alaikum Warahmatullahi Wabarakatuh. Puji syukur ke hadirat Allah SWT. Kami menyambut baik kehadiran website ini sebagai sarana informasi dan komunikasi antara sekolah, orang tua, dan masyarakat. Mari bersama kita wujudkan madrasah yang berprestasi dan berakhlakul karimah.
@@ -241,7 +241,7 @@ export default function MTsPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { jabatan: "Kepala Madrasah", nama: "H. Muhamad Ridwan, S.Ag., M.Pd.", nip: "NIP. 197204151998031003" },
+              { jabatan: "Kepala Madrasah", nama: "Hisnuddin, SH.I., S.Pd.I.", nip: "NIP. 197204151998031003" },
               { jabatan: "Wakil Kepala Kurikulum", nama: "Dra. Nurul Hidayah, M.Pd.", nip: "NIP. 196812202001122001" },
               { jabatan: "Wakil Kepala Kesiswaan", nama: "Abdul Aziz, S.Pd.I.", nip: "NIP. 198005272005011002" },
             ].map((s, i) => (

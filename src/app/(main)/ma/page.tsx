@@ -87,7 +87,7 @@ export default async function MAPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold text-slate-800 mb-2">Sambutan Kepala Madrasah</h2>
-              <div className="text-green-600 font-semibold mb-6">Drs. H. Ahmad Fauzi, M.Pd.</div>
+              <div className="text-green-600 font-semibold mb-6">Ahmad Dzul Faqor, S.Pd.I.</div>
               <p className="text-slate-600 leading-relaxed italic relative">
                 <span className="text-4xl text-green-300 absolute -top-4 -left-4">"</span>
                 Assalamu'alaikum Warahmatullahi Wabarakatuh. Selamat datang di website resmi MA Al-Muhajirin. Kami berkomitmen untuk terus memberikan pelayanan pendidikan terbaik yang memadukan keunggulan akademik dan nilai-nilai kepesantrenan. Semoga melalui platform ini, tali silaturahmi dan informasi dapat terjalin dengan lebih baik.
@@ -264,7 +264,7 @@ export default async function MAPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { jabatan: "Kepala Madrasah", nama: "Drs. H. Ahmad Fauzi, M.Pd.", nip: "NIP. 196801011990031002" },
+              { jabatan: "Kepala Madrasah", nama: "Ahmad Dzul Faqor, S.Pd.I.", nip: "NIP. 196801011990031002" },
               { jabatan: "Wakil Kepala Kurikulum", nama: "Hj. Siti Rahayu, S.Ag., M.Pd.", nip: "NIP. 197005221997032001" },
               { jabatan: "Wakil Kepala Kesiswaan", nama: "Moh. Syaifuddin, S.Pd.", nip: "NIP. 197803252003121005" },
             ].map((s, i) => (

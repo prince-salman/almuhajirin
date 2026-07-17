@@ -16,7 +16,7 @@ export default function RegisterPage() {
     const formData = new FormData(e.currentTarget);
     const data = {
       student_name: formData.get("student_name") as string,
-      institution: formData.get("institution") as string,
+      institution: `${formData.get("institution")} - ${formData.get("boarding")}`,
       phone_number: formData.get("phone_number") as string,
       address: formData.get("address") as string,
     };
@@ -69,19 +69,32 @@ export default function RegisterPage() {
                   />
                 </div>
                 
-                <div>
-                  <label htmlFor="institution" className="block text-sm font-medium text-slate-700 mb-2">Pilihan Lembaga</label>
-                  <select 
-                    id="institution" 
-                    name="institution" 
-                    required
-                    className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none transition-all bg-white"
-                  >
-                    <option value="">Pilih Lembaga</option>
-                    <option value="MA">MA Al-Muhajirin</option>
-                    <option value="MTs">MTs Al-Muhajirin</option>
-                    <option value="Ponpes">Pondok Pesantren Al-Muhajirin</option>
-                  </select>
+                <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                  <label className="block text-sm font-bold text-slate-800 mb-4">Pilih Pendidikan Formal :</label>
+                  
+                  <div className="space-y-3 mb-6">
+                    <label className="flex items-center gap-3 cursor-pointer group">
+                      <input type="radio" name="institution" value="MTs" required className="w-5 h-5 accent-blue-600 text-blue-600 border-slate-300 focus:ring-blue-500" />
+                      <span className="text-slate-700 font-medium group-hover:text-blue-700 transition-colors">MTs (setingkat SMP)</span>
+                    </label>
+                    <label className="flex items-center gap-3 cursor-pointer group">
+                      <input type="radio" name="institution" value="MA" required className="w-5 h-5 accent-blue-600 text-blue-600 border-slate-300 focus:ring-blue-500" />
+                      <span className="text-slate-700 font-medium group-hover:text-blue-700 transition-colors">MA (Setingkat SMA)</span>
+                    </label>
+                  </div>
+
+                  <div className="w-full h-px bg-slate-100 mb-6"></div>
+
+                  <div className="space-y-3">
+                    <label className="flex items-center gap-3 cursor-pointer group">
+                      <input type="radio" name="boarding" value="Sekalian mondok" defaultChecked className="w-5 h-5 accent-blue-600 text-blue-600 border-slate-300 focus:ring-blue-500" />
+                      <span className="text-slate-700 font-medium group-hover:text-blue-700 transition-colors">Sekalian mondok</span>
+                    </label>
+                    <label className="flex items-center gap-3 cursor-pointer group">
+                      <input type="radio" name="boarding" value="Tidak sekalian mondok" className="w-5 h-5 accent-blue-600 text-blue-600 border-slate-300 focus:ring-blue-500" />
+                      <span className="text-slate-700 font-medium group-hover:text-blue-700 transition-colors">Tidak sekalian mondok</span>
+                    </label>
+                  </div>
                 </div>
                 
                 <div>

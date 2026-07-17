@@ -27,11 +27,11 @@ export default function Home() {
           className="relative z-10 text-center px-4 max-w-4xl mx-auto"
         >
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-green-300 text-sm font-medium mb-6 border border-white/10">
-            Yayasan Pendidikan Islam Al-Muhajirin
+            YAYASAN AL-MUHAJIRIN TARBIYAH ISLAMIYAH (YALTIS)
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
             Mendidik Generasi<br />
-            <span className="text-green-400">Unggul dan Berakhlak</span>
+            <span className="text-green-400">Unggul dan Berakhlaqul Karimah</span>
           </h1>
           <p className="text-xl text-slate-200 mb-10 max-w-2xl mx-auto">
             Membangun generasi cerdas, beriman, dan bermanfaat bagi bangsa melalui pendidikan Islam terpadu sejak 1978.
@@ -41,7 +41,7 @@ export default function Home() {
               href="/ppdb"
               className="px-8 py-4 bg-green-600 hover:bg-green-500 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-green-500/30 flex items-center justify-center gap-2"
             >
-              Info PPDB 2025/2026 <ArrowRight size={20} />
+              Info PPDB 2026/2027 <ArrowRight size={20} />
             </Link>
             <Link
               href="/register"
